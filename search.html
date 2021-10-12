@@ -1,50 +1,50 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Services.css"> 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/services.js"></script>
+    <link rel="stylesheet" href="./css/search.css"> 
+    <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
 </head>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+    <li><a href="#">About US</a></li>
+  <li><a href="#">Book Appointment</a></li>
+  <li><a href="#">Doctors</a></li>
+
+  <li><a href="#">Enquiry</a></li>
+  <li><a href="#">Hospital View</a></li>
+  <li><a href="#">Reviews</a></li>
+
+  <li><a href="#">Services</a></li>
+
+  
+</ul>
 <body>
-      <!-- header -->
-      <header>
-        <!-- left box for logo -->
-        <div class="left">
-            <!-- <img src="img/dumbell.jpg" alt=""> -->
-            <div>HOSPITAL</div>
-
-        </div>
-        <!-- mid box for navigation -->
-        <div class="mid">
-            <ul class="navbar">
-                <!-- <li><a href="#" class="active">Home</a></li> -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-
-            </ul>
-        </div>
-        <!-- right box for buttons -->
-        <div class="right">
-            <button id="datatime" class="datetime btn">09-09-2021 11:29:39</button>
-            <button class="btn">Call us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
-    </header>
-    <!-- side icon bar-->
-    <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="search.html"><i class="fa fa-search"></i></a>
-        <a href="#"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-globe"></i></a>
-        <a href="#"><i class="fa fa-trash"></i></a>
-      </div>
-      
 
 </body>
 </html>
