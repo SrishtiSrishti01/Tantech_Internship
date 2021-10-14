@@ -1,0 +1,38 @@
+
+.block{
+    height: 70px;
+    border-top: 2px solid #99dbb9;
+    margin: 0 0 0px;
+    
+    background-color: blanchedalmond;
+}
+.contentarea {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+
+.pghead{
+    font-family: "RobotoCondLight", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 65px;
+    color: #1a1b1b;
+    left: 5%;
+    margin: 0;
+}
+.pghead span{
+    font-family: "RobotoCondBold", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+}
+.cont{
+    margin-top: 2%;
+    left:10%;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 1%;
+    margin-left:8%;
+    margin-right: 8%;
+}
